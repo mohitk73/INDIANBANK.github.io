@@ -1,0 +1,1377 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@media (max-width:426px){
+    html,body{
+        width:100%;
+        height:100%;
+    }
+.bgimage{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),url('images/background2.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+  height:100vh;
+    padding:20px;
+}
+header{
+    background:ghostwhite;
+    padding:10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 999;
+    box-shadow: 0 0 10px black;
+}
+.logo{
+    margin-left: 5px;
+}
+.logo h1{
+    font-size: 25px;
+    color:#2555A6;
+    font-weight: 900;
+}
+.logo h1 span{
+    color:green;
+}
+#navbar{
+   
+    margin: auto;
+    position: absolute;
+    top:60px;
+    left: 0;
+    right: 0;
+    width:100%;
+    background: white;
+   transition: 0.2s;
+   height:350px;
+   background-size: cover;
+   display: none;
+ }
+ 
+ 
+ nav ul{
+ 
+   
+    display: grid;
+    width:fit-content;
+    margin:30px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+   
+    
+ }
+ nav ul a{
+ margin: 10px;
+ color:#2555A6;
+ text-decoration: none;
+ font-size: 15px;
+ justify-content: center;
+ text-align: center;
+ 
+ }
+.menu{
+    display: flex;
+    margin-right: 10px;
+    color:#2555A6;
+    font-size: 25px;
+}
+.menu i{
+    color:#2555A6;
+    font-size: 35px;
+}
+.content{
+    margin-top: 130px;
+    margin-left: 20px;
+}
+.content h1{
+color:white;
+font-size: 40px;
+}
+.content h1 span{
+    color:green;
+}
+.buttons{
+    margin-left: 21px;
+    margin-top: 30px;
+}
+.buttons .create{
+    padding:5px 10px;
+    font-size: 16px;
+    text-decoration: none;
+    background: green;
+    color:white;
+    border-radius: 10px;
+}
+.buttons .create:hover{
+    background: white;
+    color:green;
+}
+.buttons .contact{
+    padding:5px 10px;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: white;
+    color:green;
+    border-radius: 10px;
+}
+.buttons .contact:hover{
+    background: green;
+    color:white;
+}
+/*service section*/
+.services{
+    margin-top: 50px;
+}
+.services h1{
+    text-align: center;
+    font-size: 30px;
+    color:black;
+    text-shadow: 0 0 4px black;
+}
+.services h1 span{
+    color:#2555A6;
+}
+.services p{
+    text-align: center;
+    font-size: 22px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+.container{
+    margin-top: 50px;
+}
+.container .boxes{
+    display: grid;
+    justify-content: center;
+    
+    margin: 10px;
+}
+.container .boxes .box{
+margin:10px;
+background:green;
+width:300px;
+height:200px;
+}
+.box img{
+    width:100%;
+}
+.box a{
+   display: flex;
+   justify-content: center;
+    text-align: center;
+    background: green;
+    color:white;
+    font-size: 19px;
+    
+    padding:4px 8px;
+    text-decoration: none;
+}
+.box a:hover{
+    background: #2555A6;
+    color:white;
+}
+/*create user*/
+.create{
+    margin-top: 60px;
+}
+.create h1{
+    text-align: center;
+    text-shadow: 0 0 4px black;
+    font-size: 30px;
+
+}
+.create h1 span{
+    color:#2555A6;
+}
+.create-form{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+form label{
+    font-size: 25px;
+    font-weight: 500;
+    
+}
+form input{
+    padding:5px 10px;
+    font-size: 15px;
+    width:300px;
+}
+form button{
+    margin-top: 10px;
+    padding:5px 10px;
+    background: green;
+    color:white;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+}
+.createmessage{
+    color:green;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+/*view customers*/
+.bankholder{
+    margin-top: 80px;
+    margin-left: 20px;
+ 
+}
+.bankholder h1{
+    color:black;
+    font-size: 30px;
+    font-weight: 500;
+
+}
+.bankholder h1{
+    font-size: 26px;
+
+}
+.bankholder .bankbutton button{
+    margin-top: 10px;
+    padding:5px 10px;
+    background: green;
+    color:white;
+    font-size: 15px;
+    border: none;
+    text-decoration: none;
+}
+.bankholder a{
+    margin-top: 10px;
+    padding:5px 10px;
+    background: green;
+    color:white;
+    font-size: 15px;
+    border: none;
+    text-decoration: none;
+}
+.bankholder a:hover{
+    background: #2555A6;
+    color:white;
+}
+
+.customers{
+    margin-top: 30px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th,td {
+    text-align: left;
+    padding: 8px;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  tr:nth-child(even) {
+    background-color: #2555A6;
+    color:white;
+  }
+
+   .modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content{
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-content form input{
+    width:320px;
+}
+
+/*success message*/
+#successMessage{
+display: none;
+color: green; 
+font-weight: bold; 
+margin-top: 10px;
+}
+/*contact*/
+.contact{
+    margin-top: 100px;
+}
+.contact h1{
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 0 0 4px black;
+}
+.contact h1 span{
+    color:#2555A6;
+}
+  form {
+    width:310px;
+    height:auto;
+    margin: 20px auto;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+  
+  .contact form input[type="text"],
+  .contact form[type="email"],
+  .contact form[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #2555A6;
+    color:white;
+  }
+  
+  .contact form input:required:invalid,
+  textarea:required:invalid {
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+  }
+  
+  .contact form input:required:valid,
+  textarea:required:valid {
+    border: 1px solid green;
+  }
+
+  footer{
+    margin-top: 50px;
+    background-color:#24262b;
+  padding:30px 0;
+  }
+  footer h1{
+margin-top: 20px;
+padding:10px;
+margin-left: 10px;
+font-size: 30px;
+color:#2555A6;
+text-shadow: 0 0 4px black;
+  }
+  footer h1 span{
+    color:green;
+  }
+  .Footerlinks{
+    margin-left: 20px;
+    margin-top: 20px;
+    display: grid;
+   gap:10px;
+  }
+   .Footerlinks h2{
+    font-size: 26px;
+    font-weight: 900;
+    color:beige
+
+   }
+   .Footerlinks p{
+    margin-top: 20px;
+    font-size: 20px;
+
+   }
+   .Footerlinks a{
+text-decoration: none;
+color:green;
+font-size: 16px;
+   }
+   .Footerlinks a:hover{
+   
+    margin-left: 5px;
+    transition: opacity 0.5s ease;
+   }
+   footer p{
+    margin-top: 20px;
+    margin-left: 20px;
+   color:ghostwhite;
+   }
+
+   /*transaction history*/
+   .transaction{
+    margin-top: 100px;
+}
+.transaction h1{
+    color:black;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 0 0 5px black;
+}
+.transaction h1 span{
+    color:#2555A6
+}
+   .transaction table {
+    border-collapse: collapse;
+    width: 1100px;
+    height:auto;
+    margin-left: 220px;
+    margin-top: 60px;
+  }
+  .transaction table th,td {
+    text-align: left;
+    padding: 8px;
+  }
+  .transaction table th {
+    background-color: #f2f2f2;
+  }
+   .transaction table tr:nth-child(even) {
+    background-color: #2555A6;
+    color:white;
+   
+  }
+}
+@media (min-width:426px) and (max-width:769px)
+{
+    html,body{
+        width:100%;
+        height:100%;
+    }
+.bgimage{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),url('images/background2.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+  height:100vh;
+    padding:20px;
+}
+header{
+    background:ghostwhite;
+    padding:10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 999;
+    box-shadow: 0 0 10px black;
+}
+.logo{
+    margin-left: 5px;
+}
+.logo h1{
+    font-size: 25px;
+    color:#2555A6;
+    font-weight: 900;
+}
+.logo h1 span{
+    color:green;
+}
+#navbar{
+    display: none;
+   
+}
+.menu{
+    display: flex;
+    margin-right: 10px;
+    color:#2555A6;
+    font-size: 25px;
+}
+.menu i{
+    color:#2555A6;
+    font-size: 32px;
+}
+.content{
+    margin-top: 130px;
+    margin-left: 20px;
+    width:400px;
+}
+.content h1{
+color:white;
+font-size: 50px;
+}
+.content h1 span{
+    color:green;
+}
+.buttons{
+    margin-left: 21px;
+    margin-top: 30px;
+}
+.buttons .create{
+    padding:6px 12px;
+    font-size: 18px;
+    text-decoration: none;
+    background: green;
+    color:white;
+    border-radius: 10px;
+}
+.buttons .create:hover{
+    background: white;
+    color:green;
+}
+.buttons .contact{
+    padding:5px 10px;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: white;
+    color:green;
+    border-radius: 10px;
+}
+.buttons .contact:hover{
+    background: green;
+    color:white;
+}
+/*service section*/
+.services{
+    margin-top: 50px;
+}
+.services h1{
+    text-align: center;
+    font-size: 40px;
+    color:black;
+    text-shadow: 0 0 4px black;
+}
+.services h1 span{
+    color:#2555A6;
+}
+.services p{
+    text-align: center;
+    font-size: 26px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+.container{
+    margin-top: 50px;
+}
+.container .boxes{
+    display: grid;
+    justify-content: center;
+    
+    margin: 10px;
+}
+.container .boxes .box{
+margin:10px;
+background:green;
+width:300px;
+height:200px;
+}
+.box img{
+    width:100%;
+}
+.box a{
+   display: flex;
+   justify-content: center;
+    text-align: center;
+    background: green;
+    color:white;
+    font-size: 19px;
+    
+    padding:4px 8px;
+    text-decoration: none;
+}
+.box a:hover{
+    background: #2555A6;
+    color:white;
+}
+/*create user*/
+.create{
+    margin-top: 60px;
+}
+.create h1{
+    text-align: center;
+    text-shadow: 0 0 4px black;
+    font-size: 30px;
+
+}
+.create h1 span{
+    color:#2555A6;
+}
+.create-form{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+form label{
+    font-size: 25px;
+    font-weight: 500;
+    
+}
+.create form input{
+    padding:5px 10px;
+    font-size: 15px;
+    width:600px;
+}
+.create form button{
+    margin-top: 10px;
+    padding:8px 16px;
+    background: green;
+    color:white;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+/*view customers*/
+.bankholder{
+    margin-top: 80px;
+    
+    text-align: center;
+ 
+}
+.bankholder h1{
+    color:black;
+    font-size: 30px;
+    font-weight: 500;
+
+}
+.bankholder h1{
+    font-size: 26px;
+
+}
+.bankholder .bankbutton button{
+    margin-top: 10px;
+    padding:5px 10px;
+    background: green;
+    color:white;
+    font-size: 15px;
+    border: none;
+    text-decoration: none;
+}
+.bankholder a{
+    margin-top: 10px;
+    padding:5px 10px;
+    background: green;
+    color:white;
+    font-size: 15px;
+    border: none;
+    text-decoration: none;
+}
+.bankholder a:hover{
+    background: #2555A6;
+    color:white;
+}
+
+.customers{
+    margin-top: 30px;
+}
+table {
+    border-collapse: collapse;
+    width: 700px;
+    margin-left: 40px;
+    border:2px solid black;
+  }
+  th,td {
+    text-align: left;
+    padding: 8px;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  tr:nth-child(even) {
+    background-color: #2555A6;
+    color:white;
+  }
+
+  /*send money form*/
+
+  .modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content{
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-content form input{
+    width:320px;
+    padding: 5px 10px;
+}
+
+/*success message*/
+#successMessage{
+display: none;
+color: green; 
+font-weight: bold; 
+margin-top: 10px;
+}
+/*contact*/
+.contact{
+    margin-top: 100px;
+}
+.contact h1{
+    text-align: center;
+    font-size: 35px;
+    text-shadow: 0 0 4px black;
+}
+.contact h1 span{
+    color:#2555A6;
+}
+  form {
+    max-width: 600px;
+    height:auto;
+    margin: 20px auto;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 26px;
+  }
+  form input{
+    width: 600px;
+    padding: 5px 10px;
+  }
+  
+  .contact form input[type="text"],
+  .contact form input[type="email"],
+  .contact form input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #2555A6;
+    color:white;
+  }
+  
+  .contact form input:required:invalid,
+  textarea:required:invalid {
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+  }
+  
+  .contact form input:required:valid,
+  textarea:required:valid {
+    border: 1px solid green;
+  }
+
+  footer{
+    margin-top: 50px;
+    background-color:#24262b;
+  padding:30px 0;
+  }
+  footer h1{
+margin-top: 20px;
+padding:10px;
+margin-left: 30px;
+font-size: 30px;
+color:#2555A6;
+text-shadow: 0 0 4px black;
+  }
+  footer h1 span{
+    color:green;
+  }
+  .Footerlinks{
+    margin-left: 40px;
+    margin-top: 20px;
+    display: grid;
+   gap:10px;
+  }
+   .Footerlinks h2{
+    font-size: 26px;
+    font-weight: 900;
+    color:beige
+
+   }
+   .Footerlinks p{
+    margin-top: 20px;
+    font-size: 20px;
+
+   }
+   .Footerlinks a{
+text-decoration: none;
+color:green;
+font-size: 16px;
+   }
+   .Footerlinks a:hover{
+   
+    margin-left: 5px;
+    transition: opacity 0.5s ease;
+   }
+   footer p{
+    margin-top: 20px;
+    text-align: center;
+   color:ghostwhite;
+   }
+   .transaction{
+    margin-top: 100px;
+}
+.transaction h1{
+    color:black;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 0 0 5px black;
+}
+.transaction h1 span{
+    color:#2555A6
+}
+   .transaction table {
+    border-collapse: collapse;
+    width: 1100px;
+    height:auto;
+    margin-left: 220px;
+    margin-top: 60px;
+  }
+  .transaction table th,td {
+    text-align: left;
+    padding: 8px;
+  }
+  .transaction table th {
+    background-color: #f2f2f2;
+  }
+   .transaction table tr:nth-child(even) {
+    background-color: #2555A6;
+    color:white;
+   
+  }
+}
+
+@media (min-width:769px) and (max-width:2000px){
+    html,body{
+        width:100%;
+        height:100%;
+    }
+.bgimage{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),url('images/background2.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+  height:100vh;
+    padding:20px;
+}
+header{
+    background:ghostwhite;
+    padding:10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 999;
+    box-shadow: 0 0 10px black;
+}
+.logo{
+    margin-left: 5px;
+}
+.logo h1{
+    font-size: 25px;
+    color:#2555A6;
+    font-weight: 900;
+}
+.logo h1 span{
+    color:green;
+}
+#navbar{
+    display: flex;
+}
+nav ul{
+    margin:15px;
+    margin-right: 30px;
+}
+nav ul a{
+    text-decoration: none;
+    margin: 15px;
+    font-size: 20px;
+    color:#2555A6;
+}
+nav ul a:hover{
+    background-color: green;
+    color:white;
+    padding:5px 10px;
+    font-size: 17px;
+    border-radius: 10px;
+}
+.menu{
+    display: none;
+    margin-right: 10px;
+    color:#2555A6;
+    font-size: 25px;
+}
+.menu i{
+    color:#2555A6;
+    font-size: 32px;
+}
+.content{
+    margin-top: 190px;
+    margin-left: 332px;
+    display: flex;
+    justify-content: center;
+    width: 800px;
+}
+.content h1{
+color:white;
+font-size: 70px;
+}
+.content h1 span{
+    color:green;
+}
+.buttons{
+    margin-left: 332px;
+    margin-top: 30px;
+}
+.buttons .create{
+    padding:8px 16px;
+    font-size: 18px;
+    text-decoration: none;
+    background: green;
+    color:white;
+    border-radius: 10px;
+    margin: 10px;
+}
+.buttons .create:hover{
+    background: #2555A6;
+    color:white;
+}
+.buttons .contact{
+    padding:8px 16px;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: white;
+    color:green;
+    border-radius: 10px;
+}
+.buttons .contact:hover{
+    background: green;
+    color:white;
+}
+/*service section*/
+.services{
+    margin-top: 50px;
+}
+.services h1{
+    text-align: center;
+    font-size: 50px;
+    color:black;
+    text-shadow: 0 0 4px black;
+}
+.services h1 span{
+    color:#2555A6;
+}
+.services p{
+    text-align: center;
+    font-size: 28px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+.container{
+    margin-top: 50px;
+}
+.container .boxes{
+    display: flex;
+    justify-content: center;
+    
+    margin: 10px;
+}
+.container .boxes .box{
+margin:10px;
+background:green;
+width: 370px;
+    height: 250px;
+}
+.box img{
+    width:100%;
+}
+.box a{
+   display: flex;
+   justify-content: center;
+    text-align: center;
+    background: green;
+    color:white;
+    font-size: 19px;
+    
+    padding:4px 8px;
+    text-decoration: none;
+}
+.box a:hover{
+    background: #2555A6;
+    color:white;
+}
+/*create user*/
+.create{
+    margin-top: 100px;
+}
+.create h1{
+    text-align: center;
+    text-shadow: 0 0 4px black;
+    font-size: 50px;
+
+}
+.create h1 span{
+    color:#2555A6;
+}
+.create-form{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+form label{
+    font-size: 25px;
+    font-weight: 500;
+    
+}
+form input{
+    padding:10px 20px;
+    font-size: 20px;
+    width:800px;
+    border: 2px solid grey;
+}
+form button{
+    margin-top: 20px;
+    padding:10px 20px;
+    background: green;
+    color:white;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+form button:hover{
+    background: #2555A6;
+    color:white;
+}
+
+/*view customers*/
+.bankholder{
+    margin-top: 80px;
+    margin-left: 20px;
+    text-align: center;
+ 
+}
+.bankholder h1{
+    color:black;
+    font-size: 30px;
+    font-weight: 500;
+
+}
+.bankholder h1{
+    font-size: 26px;
+}
+.bankholder .bankbutton button{
+    margin-top: 10px;
+    padding:5px 10px;
+    background: green;
+    color:white;
+    font-size: 15px;
+    border: none;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.bankholder .bankbutton button:hover{
+    background: #2555A6;
+    color:white;
+}
+.bankholder a{
+    margin-top: 10px;
+    padding:5px 10px;
+    background: green;
+    color:white;
+    font-size: 16px;
+    border: none;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.bankholder a:hover{
+    background: #2555A6;
+    color:white;
+}
+
+.customers{
+    margin-top: 30px;
+}
+table {
+    border-collapse: collapse;
+    width: 1100px;
+    height:550px;
+    margin-left: 220px;
+  }
+  th,td {
+    text-align: left;
+    padding: 8px;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  tr:nth-child(even) {
+    background-color: #2555A6;
+    color:white;
+  }
+  .modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content{
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-content form input{
+    width:618px;
+}
+
+/*success message*/
+#successMessage{
+display: none;
+color: green; 
+font-weight: bold; 
+margin-top: 10px;
+font-size: 30px;
+}
+
+.contact{
+    margin-top: 100px;
+}
+.contact h1{
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 0 0 4px black;
+}
+.contact h1 span{
+    color:#2555A6;
+}
+   form {
+    max-width: 800px;
+    height:auto;
+    margin: 20px auto;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 26px;
+  }
+  
+  .contact form input[type="text"],
+  .contact form input[type="email"],
+  .contact form input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  
+  button[type="submit"] {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #2555A6;
+    color:white;
+  }
+  
+  .contact form input:required:invalid,
+  textarea:required:invalid {
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+  }
+  
+  .contact form input:required:valid,
+  textarea:required:valid {
+    border: 1px solid green;
+  }
+
+  footer{
+    margin-top: 50px;
+    background-color:#24262b;
+  padding:30px 0;
+  }
+  footer h1{
+margin-top: 20px;
+padding:10px;
+margin-left: 30px;
+font-size: 30px;
+color:#2555A6;
+text-shadow: 0 0 4px black;
+  }
+  footer h1 span{
+    color:green;
+  }
+  .Footerlinks{
+    margin-left: 40px;
+    margin-top: 20px;
+    display: grid;
+   gap:10px;
+  }
+   .Footerlinks h2{
+    font-size: 26px;
+    font-weight: 900;
+    color:beige
+
+   }
+   .Footerlinks p{
+    margin-top: 20px;
+    font-size: 20px;
+
+   }
+   .Footerlinks a{
+text-decoration: none;
+color:green;
+font-size: 16px;
+   }
+   .Footerlinks a:hover{
+   
+    margin-left: 5px;
+    transition: opacity 0.5s ease;
+   }
+   footer p{
+    margin-top: 20px;
+    text-align: center;
+   color:ghostwhite;
+   }
+
+/*transaction history*/
+.transaction{
+    margin-top: 100px;
+}
+.transaction h1{
+    color:black;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 0 0 5px black;
+}
+.transaction h1 span{
+    color:#2555A6
+}
+   .transaction table {
+    border-collapse: collapse;
+    width: 1100px;
+    height:auto;
+    margin-left: 220px;
+    margin-top: 60px;
+  }
+  .transaction table th,td {
+    text-align: left;
+    padding: 8px;
+  }
+  .transaction table th {
+    background-color: #f2f2f2;
+  }
+   .transaction table tr:nth-child(even) {
+    background-color: #2555A6;
+    color:white;
+   
+  }
+}

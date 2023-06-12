@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create user</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>INDIAN <span>BANK</span></h1>
+        </div>
+        <nav id="navbar">
+            <ul>
+                <a href="index.html">Home</a>
+                <a href="customers.html">View Customers</a>
+                <a href="customers.html">Transfer Money</a>
+                <a href="transactionhistory.html">Transaction History</a>
+                
+            </ul>
+        </nav>
+        <div class="menu">
+            <i class='bx bx-menu' ></i>
+        </div>
+    </header>
+    <main>
+    <div class="create">
+        <h1>Create <span>User</span></h1>
+        <div class="create-form">
+            <form>
+                <label for="name">Name</label><br>
+                <input type="text" name="name" placeholder="Name" required="required"><br>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" placeholder="Email" required="required"><br>
+                <label for="Amount">Amount</label><br>
+                <input type="number" name="amount" placeholder="Amount" required="required"><br>
+                <button onclick="createaccount()">Create</button>
+                <div id="createmessage"></div>
+            </form>
+           
+        </div>
+    </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customers List</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>INDIAN <span>BANK</span></h1>
+        </div>
+        <nav id="navbar">
+            <ul>
+                <a href="index.html">Home</a>
+                <a href="customers.html">View Customers</a>
+                <a href="customers.html">Transfer Money</a>
+                <a href="transactionhistory.html">Transaction History</a>
+                
+            </ul>
+        </nav>
+        <div class="menu">
+            <i class='bx bx-menu' ></i>
+        </div>
+    </header>
+    <main>
+        <div class="bankholder">
+            <h1>Name:Mohit Kumar</h1>
+            <h2>Net Bank Balance:200,000Rs</h2>
+            <br>
+            <div class="bankbutton">
+                 <button onclick="openSendMoneyForm()">Send Money</button>
+                 <a href="transactionhistory.html">View All Transactions</a>
+            </div>
+        </div>
+        <div class="modal fade" id="transactionHistory" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Transaction History</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ol id="transaction-history-body">
+
+                    </ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="customers">
+            <table>
+                <thead>
+                  <tr>
+                    <th>S.No</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Bank</th>
+                    <th>Balance</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Mohit</td>
+                    <td>mohit@gmail.com</td>
+                    <td>Indian Bank</td>
+                    <td>5,000Rs</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>prajwal</td>
+                    <td>prajwal@gmail.com</td>
+                    <td>Indian Bank</td>
+                    <td>8,000Rs</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>piyush</td>
+                    <td>piyush@gmail.com</td>
+                    <td>Indian Bank</td>
+                    <td>12,000Rs</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Nitin</td>
+                    <td>nitin@gmail.com</td>
+                    <td>Indian Bank</td>
+                    <td>3,200Rs</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>kshitiz</td>
+                    <td>Kshitiz@gmail.com</td>
+                    <td>Indian Bank</td>
+                    <td>15,000Rs</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>priyanshu</td>
+                    <td>priyanshu@gmail.com</td>
+                    <td>Indian Bank</td>
+                    <td>9,500Rs</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>pranav</td>
+                    <td>pranav@gmail.com</td>
+                    <td>Indian Bank</td>
+                    <td>6,000Rs</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>shubham</td>
+                    <td>shubham@gmail.com</td>
+                    <td>Indian Bank</td>
+                    <td>2,000Rs</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>abhinav</td>
+                    <td>abhinav@gmail.com</td>
+                    <td>Indian Bank</td>
+                    <td>11,000Rs</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>mohit</td>
+                    <td>mohit@gmail.com</td>
+                    <td>Indian Bank</td>
+                    <td>50,000Rs</td>
+                  </tr>
+                  </tbody>
+            </table>
+        </div>
+    </main>
+    <div id="sendMoneyForm" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSendMoneyForm()">&times;</span>
+            <h2>Send Money</h2>
+            <form id="sendMoneyForm" onsubmit="submitForm(event)">
+                <label for="recipientName">Recipient Name:</label>
+                <input type="text" id="recipientName" required>
+                <label for="recipientEmail">Recipient Email:</label>
+                <input type="email" id="recipientEmail" required>
+                <label for="amount">Amount:</label>
+                <input type="text" id="amount" required><br>
+                <button type="submit">Send</button>
+            </form>
+            <div id="successMessage"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
